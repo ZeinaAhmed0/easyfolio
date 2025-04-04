@@ -202,42 +202,32 @@ h1 {
     background-color: var(--whitesmoke-color);
     position: relative;
 }
-.title-info{
+.title{
     margin-top: 10%;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.125rem;
-    width: calc(100% - 9.375rem / 2);
-    position: relative;
 }
-.title-info h2{
+.title h2{
     color: var(--title-color);
     font-size: 2.5rem;
     font-family: Arial, Helvetica, sans-serif;
 }
-.title-info p{
+.title p{
     font-size: 1.3rem;
     width: 60%;
     text-align: center;
     font-family:"Segoe UI Emoji";
     color: var(--light-dark);
-}
-.title-info img{
-    width: 12.5rem;
-    height: 5.625rem;
     position: absolute;
-    top: 5rem;
+    top: 10rem;
 }
-.title-info svg{
+.title svg{
     width: 12.5rem;
-    height: 6.25rem;
     color: var(--svg-color);
-    position: absolute;
-    top: 5.0625rem;
-    left: 33rem;
+    position: relative;
 }
 .about-info{
     display: flex;
@@ -389,26 +379,15 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
-    width: calc(100% - 5rem / 2);
 }
 .title h2{
     color: var(--title-color);
     font-size: 2.5rem;
 }
 .work-experience .title svg{
-    width: 15.625rem;
+    width: 12.5rem;
     height: 6.25rem;
     color: var(--svg-color);
-    position: absolute;
-    top: 1.875rem;
-    left: 38%;
-}
-.title p{
-    font-size: 1rem;
-    width: 60%;
-    text-align: center;
-    color: var(--light-dark);
 }
 .work-experience-content{
     margin: 5% 0;
@@ -526,12 +505,9 @@ h1 {
 /*resume css end*/
 /*portfolio css start*/
 #portfolio .title svg{
-    width: 15.5rem;
+    width: 12.5rem;
     height: 6.25rem;
     color: var(--svg-color);
-    position: absolute;
-    top: 1.0625rem;
-    left: 34.5rem;
 }
 .portfolio-links{
     width: 50%;
@@ -702,18 +678,20 @@ h1 {
 }
 /*portifolio css end*/
 /*testimonials css start*/
-#testimonials .title svg{
-    width: 18.75rem;
-    height: 6.25rem;
-    color: var(--svg-color);
-    position: absolute;
-    top: 1.875rem;
-    left: 30.5rem;
-}
 #testimonials{
     background-color: var(--whitesmoke-color);
     margin-top: 5%;
     padding-top: 5%;
+}
+#testimonials .title svg{
+    width: 12.75rem;
+    color: var(--svg-color);
+}
+#testimonials .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .testimonials-content{
     width: fit-content;
@@ -798,12 +776,8 @@ h1 {
     margin-top: 5%;
 }
 #services .title svg{
-    width: 13.57rem;
-    height: 6.25rem;
+    width: 12.57rem;
     color: var(--svg-color);
-    position: absolute;
-    top: 1.875rem;
-    left: 33rem;
 }
 .services-content{
     display: flex;
@@ -890,12 +864,8 @@ h1 {
     padding-bottom: 5%;
 }
 #frequently-asked-questions .title svg{
-    width: 31.25rem;
-    height: 3.8rem;
+    width: 12.25rem;
     color: var(--svg-color);
-    position: absolute;
-    top: 3.75rem;
-    left: 24rem;
 }
 .questions-content{
     width: 90%;
@@ -911,7 +881,7 @@ h1 {
     color: var(--light-dark);
     font-weight: 500;
     transition: .4s;
-    width: 97% !important;
+    width: 96.7% !important;
 }
 .accordion-item button:hover{
     color: var(--main-color);
@@ -922,7 +892,7 @@ h1 {
 .accordion-header:hover button{
     color: var(--main-color);
     background-color: var(--main-lighter);
-    width: 97.3% !important;
+    width: 96.7% !important;
 }
 .accordion-button:not(.collapsed) {
     color: var(--main-color) !important;
@@ -1126,34 +1096,18 @@ footer{
 }
 /*footer css end*/
 /*media query*/
-@media (max-width:1024px) {
-    html{
-        font-size: 15px;
-    }
-    .container{
-        width: 95%;
-        margin: auto;
-    }
-    .portfolio-links{
-        width: 70%;
-    }
-    .portofolio-cards{
-        flex-wrap: wrap;
-    }
-    .portofolio-cards .card{
-        width: 100%;
-    }
-    .portofolio-cards .card:hover::after{
-        height: 78.5%;
-    }
-    .contact-content{
-        flex-wrap: wrap;
-    }
-    .contact-info{
-        width: 100%;
-    }
-}
 @media (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    #about{
+        width: 100%;
+    }
+    .title p{
+        width: 90%;
+        margin: auto;
+        top: 8rem;
+    }
     .banner{
         flex-wrap: wrap;
     }
@@ -1176,11 +1130,9 @@ footer{
     .banner .pic{
         width: 90%;
     }
-    #about .title-info svg{
-        left: 220px;
-    }
     .about-info{
         width: 90%;
+        padding: 2rem;
     }
     .about-info .info-img{
        display: none;
@@ -1188,12 +1140,51 @@ footer{
     .signature{
         justify-content: space-between;
     }
+    .signature img{
+        width: 50%;
+    }
     .skills{
+        width: 90%;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 2rem;
+        padding: 7rem 1rem;
     }
     .skills-box{
         width: 40%;
-        gap: 10px;
+    }
+    .skills-box p{
+        font-size: 0.625rem;
+    }
+    .work-experience{
+        margin: 3rem 0;
+        padding: 3rem;
+    }
+    .work-experience .txt0{
+        padding-top: 3rem;
+    }
+    .work-experience span{
+        width: 100%;
+    }
+    .work-experience-data1:nth-of-type(2){
+        display: none;
+    }
+    .work-experience-data1 .line{
+        height: 25rem;
+        top: 15rem;
+    }
+    .portofolio-cards{
+        flex-wrap: wrap;
+    }
+    .portofolio-cards .card{
+        width: 100%;
+    }
+    .portofolio-cards .card:hover::after{
+        height: 78.5%;
+    }
+    #frequently-asked-questions{
+        display: none;
+    }
+    .arrow{
+        display: none;
     }
 }
