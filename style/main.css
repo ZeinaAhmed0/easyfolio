@@ -1100,11 +1100,11 @@ footer{
         font-size: 14px;
     }
     header{
-        width: 100% !important;
+        width: 95% !important;
     }
     nav{
         width: 70% !important;
-        margin: auto !important;
+        margin: 0 2rem;
     }
     #about{
         width: 100%;
@@ -1219,7 +1219,7 @@ footer{
         margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 16.2rem;
+        height: 15.2rem;
     }
     .hidden .arrow{
         left: 4rem;
