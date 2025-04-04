@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+button{
+    font-family: questrial;
+}
+ul{
+    list-style: none;
+    text-transform: capitalize;
+}
+a{
+    text-decoration: none;
+}

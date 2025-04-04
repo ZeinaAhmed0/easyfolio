@@ -1,0 +1,20 @@
+@font-face {
+    font-family: questrial;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+html{
+    font-family: questrail;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+button{
+    font-family: questrail;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , p , span{
+    text-transform: capitalize;
+}
+li{
+    cursor: pointer;
+}
