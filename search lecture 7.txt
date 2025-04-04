@@ -1,0 +1,9 @@
+● Transform 3d : 
+بيخليني اقدر احرك العنصر على الثلاث محاور x,y,z
+لازم استخدم معاه للparent بتاعه
+ perspective :
+لازم استخدمه معاه اديه للاب 
+perspective orgain:
+z axis علشان اديه قيمة المسافة اللي بينه وبين العنصر علشان يقدر يتحرك على 
+ center , top right  , top left وهكذا
+● Transform skew : بنخلي العنصر بيه يميل
