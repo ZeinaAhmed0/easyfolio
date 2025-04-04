@@ -911,6 +911,7 @@ h1 {
     color: var(--light-dark);
     font-weight: 500;
     transition: .4s;
+    width: 97% !important;
 }
 .accordion-item button:hover{
     color: var(--main-color);
@@ -921,6 +922,7 @@ h1 {
 .accordion-header:hover button{
     color: var(--main-color);
     background-color: var(--main-lighter);
+    width: 97.3% !important;
 }
 .accordion-button:not(.collapsed) {
     color: var(--main-color) !important;
@@ -939,7 +941,7 @@ h1 {
     padding: 5% 0;
     display: flex;
     gap: 3.125rem;
-    width: calc(97% - 3.125rem / 2);
+    width: calc(95% - 3.125rem / 2);
     height: fit-content;
 }
 .contact-txt{
