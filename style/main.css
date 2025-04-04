@@ -1101,10 +1101,11 @@ footer{
     }
     header{
         width: 95% !important;
+        position: fixed;
     }
     nav{
         width: 70% !important;
-        margin: 0 0.825rem;
+        margin: 0 1.125rem;
     }
     #about{
         width: 100%;
