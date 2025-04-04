@@ -1267,7 +1267,7 @@ footer{
     }
     .questions-content{
         width: 72%;
-        margin: auto;
+        margin: 1.5rem;
     }
     .accordion-header{
         width: 93% !important;
