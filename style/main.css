@@ -1221,7 +1221,7 @@ footer{
         margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 15.2rem;
+        height: 16.2rem;
     }
     .hidden .arrow{
         left: 4rem;
@@ -1273,10 +1273,10 @@ footer{
         width: 93% !important;
     }
     .accordion-item button{
-        width: 95.6% !important;
+        width: 95.5% !important;
     }
     .accordion-header:hover button{
-        width: 95.6% !important;
+        width: 95.5% !important;
     }
     .contact-content{
         flex-wrap: wrap;
