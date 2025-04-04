@@ -1221,7 +1221,7 @@ footer{
         margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 16.2rem;
+        display: none;
     }
     .hidden .arrow{
         left: 4rem;
