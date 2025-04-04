@@ -618,7 +618,7 @@ h1 {
 .hidden .arrow{
     position: absolute;
     bottom: 0;
-    left: 70px;
+    left: 4.375rem;
     margin: 2%;
     width: 3.125rem;
     height: 3.125rem;
@@ -694,7 +694,6 @@ h1 {
     justify-content: center;
 }
 .testimonials-content{
-    width: fit-content;
     margin-top: 5%;
     display: flex;
     gap: 1.875rem;
@@ -1016,7 +1015,7 @@ input:focus , textarea:focus{
     border: none;
     outline: none;
     border-radius: 0.3125rem;
-    font-size: 1.625rem;
+    font-size: 1.325rem;
     padding: 2.5% 4.5%;
     transition: .4s;
 }
@@ -1096,17 +1095,26 @@ footer{
 }
 /*footer css end*/
 /*media query*/
-@media (max-width:768px){
+@media (max-width:425px){
     html{
         font-size: 14px;
+    }
+    header{
+        width: 100% !important;
+    }
+    nav{
+        width: 80% !important;
+        margin: auto !important;
     }
     #about{
         width: 100%;
     }
     .title p{
         width: 90%;
+        font-size: 1rem;
         margin: auto;
         top: 8rem;
+        text-align: center;
     }
     .banner{
         flex-wrap: wrap;
@@ -1120,6 +1128,7 @@ footer{
         justify-content: center;
     }
     .banner .buttons{
+        width: 100%;
         align-items: center;
         justify-content: center;
     }
@@ -1143,6 +1152,12 @@ footer{
     .signature img{
         width: 50%;
     }
+    .signature-text{
+        width: 50%;
+    }
+    .signature-text p{
+        font-size: 0.625rem;
+    }
     .skills{
         width: 90%;
         flex-wrap: wrap;
@@ -1155,41 +1170,80 @@ footer{
         gap: 0.825rem;
     }
     .skills-box p{
-        font-size: 0.825rem;
+        font-size: 1.125rem;
     }
-    .work-experience{
-        margin: 3rem 0;
-        padding: 3rem;
+    .work-experience , .my-education-content{
+       width: 95%;
+       margin: auto;
     }
-    .work-experience .txt0{
-        padding-top: 3rem;
+    .txt0{
+        padding-top: 10rem;
     }
-    .work-experience span{
+    .work-experience span , .my-education-content span{
         width: 100%;
     }
-    .work-experience-data1:nth-of-type(2){
-        display: none;
+    .work-experience-data1 , .my-education-data1{
+        padding-bottom: 1.5rem;
+        gap: 0.625rem;
+        flex-direction: column;
+    }
+    .txt{
+        width: 90%;
+        padding-left: 2rem;
+        transform: translateY(7rem);
+    }
+    .txt1{
+        width: 90%;
+        padding-left: 2rem;
+        transform: translateY(-9rem);
+    }
+    .design{
+        transform: translateY(-4.5rem);
     }
     .work-experience-data1 .line{
-        height: 16rem;
-        top: 8rem;
+        height: 63rem;
+        top: 32rem;
     }
     .my-education-content .line{
-        height: 20rem;
-        top: 10rem;
+        height: 40rem;
+        top: 20rem;
     }
     .portofolio-cards{
+        width: 95%;
+        margin: 0;
         flex-wrap: wrap;
     }
     .portofolio-cards .card{
-        width: 95%;
+        width: 90%;
         margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 75.5%;
+        height: 17.3rem;
+    }
+    .hidden .arrow{
+        left: 4rem;
     }
     .portfolio-links{
-        width: 80%;
+        width: 100%;
+        padding: 5rem 0;
+    }
+    .portfolio-links ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+    .portfolio-links ul li{
+        width: 30%;
+    }
+    .testimonials-content{
+        width: 85%;
+    }
+    .testimonials-pic{
+        display: none;
+    }
+    .testimonials-text{
+        width: 100%;
+        gap: 1.5rem;
     }
     .services-content{
         flex-wrap: wrap;
@@ -1202,8 +1256,24 @@ footer{
         width: 90%;
         margin: auto;
     }
+    .services-card .card{
+        width: 100%;
+    }
+    #frequently-asked-questions .title h2{
+        font-size: 2rem;
+    }
+    .questions-content{
+        width: 75%;
+        margin: auto;
+    }
+    .accordion-header{
+        width: 97% !important;
+    }
     .accordion-item button{
-        width: 94.8% !important;
+        width: 91.8% !important;
+    }
+    .accordion-header:hover button{
+        width: 91.8% !important;
     }
     .contact-content{
         flex-wrap: wrap;

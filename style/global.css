@@ -3,7 +3,7 @@
     src: url(../assetes/fonts/Questrial-Regular.ttf);
 }
 html{
-    font-family: questrail;
+    font-family: questrial;
     scroll-behavior: smooth;
     font-size: 16px;
 }
@@ -12,8 +12,9 @@ button{
     text-transform: capitalize;
     cursor: pointer;
 }
-h1 , h2 , h3 , h4 , h5 , h6 , p , span{
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , button{
     text-transform: capitalize;
+    font-family: questrial;
 }
 li{
     cursor: pointer;
