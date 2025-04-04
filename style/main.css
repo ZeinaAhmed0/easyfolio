@@ -1106,6 +1106,7 @@ footer{
     nav{
         width: 76.4% !important;
         margin: 0;
+        margin-left: 0.3rem;
     }
     #about{
         width: 100%;
@@ -1220,7 +1221,7 @@ footer{
         margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 17rem;
+        height: 15rem;
     }
     .hidden .arrow{
         left: 4rem;
