@@ -348,7 +348,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 10px;
+    gap: 0.625rem;
 }
 .skills-box .value-bg{
     width: 100%;
@@ -591,7 +591,7 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 22.7rem;
+    height: 26.5rem;
     border-radius: 1rem 1rem 0 0;
     z-index: 1;
     background-image: linear-gradient(to bottom, transparent, var(--lighter-dark));
@@ -1016,8 +1016,8 @@ input:focus , textarea:focus{
     border: none;
     outline: none;
     border-radius: 0.3125rem;
-    font-size: 18px;
-    padding: 3% 6%;
+    font-size: 1.625rem;
+    padding: 2.5% 4.5%;
     transition: .4s;
 }
 .contact-form button:hover{
@@ -1150,10 +1150,12 @@ footer{
         padding: 7rem 1rem;
     }
     .skills-box{
-        width: 40%;
+        width: 90%;
+        margin: auto;
+        gap: 0.825rem;
     }
     .skills-box p{
-        font-size: 0.625rem;
+        font-size: 0.825rem;
     }
     .work-experience{
         margin: 3rem 0;
@@ -1169,20 +1171,50 @@ footer{
         display: none;
     }
     .work-experience-data1 .line{
-        height: 25rem;
-        top: 15rem;
+        height: 16rem;
+        top: 8rem;
+    }
+    .my-education-content .line{
+        height: 20rem;
+        top: 10rem;
     }
     .portofolio-cards{
         flex-wrap: wrap;
     }
     .portofolio-cards .card{
-        width: 100%;
+        width: 95%;
+        margin: auto;
     }
     .portofolio-cards .card:hover::after{
-        height: 78.5%;
+        height: 75.5%;
     }
-    #frequently-asked-questions{
-        display: none;
+    .portfolio-links{
+        width: 80%;
+    }
+    .services-content{
+        flex-wrap: wrap;
+    }
+    .services-txt{
+        width: 90%;
+        margin: auto
+    }
+    .services-card{
+        width: 90%;
+        margin: auto;
+    }
+    .accordion-item button{
+        width: 94.8% !important;
+    }
+    .contact-content{
+        flex-wrap: wrap;
+    }
+    .contact-txt{
+        width: 90%;
+        margin: auto;
+    }
+    .contact-form{
+        width: 80%;
+        margin: auto;
     }
     .arrow{
         display: none;

@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: content-box;
 }
-button{
-    font-family: questrial;
-}
 ul{
     list-style: none;
     text-transform: capitalize;
