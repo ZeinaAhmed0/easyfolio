@@ -587,13 +587,14 @@ h1 {
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
-.portofolio-cards .card:hover::after{
+.portofolio-cards .card:hover .card-img::after{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 22.7rem;
+    height: 100%;
+    overflow: hidden;
     border-radius: 1rem 1rem 0 0;
     z-index: 1;
     background-image: linear-gradient(to bottom, transparent, var(--lighter-dark));
